@@ -1,0 +1,789 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-color-voilet {
+  background-color: blueviolet;
+}
+
+.bg-color-red {
+  background-color: rgb(190, 42, 141);
+}
+
+.bg-color-green {
+  background-color: rgb(69, 128, 69);
+}
+
+.bg-color-skyblue {
+  background-color: skyblue;
+}
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+.hero-section-parents {
+  background: linear-gradient(
+      to right,
+      rgba(79, 74, 217, 0.5),
+      rgba(43, 230, 118, 0.5)
+    ),
+    url(images/panorama-3094696_1920.jpg) left top no-repeat;
+  min-height: 100vh;
+  width: 100%;
+
+  .header-section-area {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 20px 0px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: blue;
+
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      color: white;
+      height: 70px;
+
+      .logo h5 {
+        font-size: 20px;
+      }
+      .menu-link-area {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-link {
+          display: flex;
+          align-items: center;
+
+          ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            gap: 5px;
+            position: relative;
+            top: 6px;
+
+            li {
+              padding: 10px;
+              border: 1px solid transparent;
+              cursor: pointer;
+              a {
+                color: white;
+                text-decoration: none;
+              }
+
+              .Download-btn {
+                padding: 10px 40px;
+                background-color: white;
+                color: blue;
+                border: 1px solid transparent;
+                font-weight: 500;
+                border-radius: 5px;
+
+                &:hover {
+                  transition: 0.2s linear;
+                  box-shadow: 0px 0px 5px 0px black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    .hero-section-heading {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      text-align: start;
+    }
+    .hero-section-content {
+      font-size: 20px;
+      color: white;
+      text-align: start;
+    }
+    .hero-section-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      .demo-btn {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border: 2px solid white;
+        font-weight: 400;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 0px 0px 2px 0px black;
+        }
+      }
+      .demo-btn img {
+        height: 15px;
+        width: 15px;
+        object-fit: cover;
+        align-items: center;
+        transition: 0.2s linear;
+      }
+      .learn-btn {
+        padding: 10px 40px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: 0.2s linear;
+        &:hover {
+          box-shadow: 0px 0px 2px 0px black;
+        }
+      }
+    }
+  }
+}
+.Frameworks-section {
+  // height: 300px;
+  width: 100%;
+
+  .equal-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .grid-heading-section {
+      min-height: 300px;
+      padding-top: 60px;
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+
+      img {
+        height: 60px;
+        width: 60px;
+        position: relative;
+        padding-bottom: 20px;
+        object-fit: cover;
+        filter: brightness(0) invert(1);
+      }
+      p {
+        font-size: 14px;
+        padding-top: 30px;
+      }
+    }
+  }
+}
+img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.work-section {
+  width: 100%;
+  background-color: rgb(232, 231, 231);
+  .work-heading-section {
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    .work-content-section {
+      font-size: 18px;
+      color: gray;
+      padding-top: 20px;
+      font-weight: 100;
+    }
+  }
+  .work-box-section {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    .work-box-heading {
+      animation: work-box-section 2s ease 0s 1 normal forwards;
+      font-size: 30px;
+      color: black;
+      font-weight: 600;
+      text-align: center;
+      .work-box-content {
+        font-size: 18px;
+        color: gray;
+        padding-top: 20px;
+        font-weight: 100;
+      }
+    }
+  }
+}
+.education-section {
+  width: 100%;
+
+  .education-heading-section {
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    .education-content-section {
+      font-size: 22px;
+      color: gray;
+      padding-top: 20px;
+      font-weight: 100;
+    }
+  }
+  .animation-education {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  .animation-education-right {
+    animation: animation-education-right 1s ease 0s 1 normal forwards;
+  }
+  .education-img {
+    height: 300px;
+    width: 400px;
+    padding-top: 30px;
+    margin-left: 30px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0px 0px 10px 0px;
+    }
+  }
+  .education-box {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-top: 15px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    .education-section {
+      height: 60px;
+      width: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 20px;
+      }
+    }
+    .education-heading {
+      font-size: 22px;
+      margin-left: 30px;
+      font-weight: 500;
+    }
+    .education-content {
+      font-size: 14px;
+      text-align: start;
+      margin-left: 30px;
+      color: gray;
+    }
+  }
+  hr {
+    margin-top: 60px;
+  }
+  .marketing-img {
+    height: 300px;
+    width: 400px;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-left: 100px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0px 0px 10px 0px;
+    }
+  }
+}
+.pricing-section {
+  margin-top: 80px;
+  background-color: #3949ab;
+  width: 100%;
+  .pricing-heading-section {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    .pricing-content-section {
+      font-size: 22px;
+      color: rgb(196, 190, 190);
+      padding-top: 20px;
+      font-weight: 300;
+    }
+  }
+  .pricing-box-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    animation: pricing-box-section 1s ease 0s 1 normal forwards;
+
+    .Individual-box-heading,
+    .startup-box-heading,
+    .Execution-box-heading {
+      background: linear-gradient(
+          to right,
+          rgba(31, 31, 33, 0.5),
+          rgba(14, 18, 15, 0.5)
+        ),
+        url(images/panorama-3094696_1920.jpg) left top no-repeat;
+      background-position: center;
+      border: 1px solid transparent;
+      height: 600px;
+      width: 400px;
+      padding-top: 30px;
+      font-size: 25px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0px 0px 5px 0px black;
+      border-radius: 5px;
+      ul li {
+        list-style: none;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        right: 5px;
+        top: 50px;
+        margin: 12px;
+      }
+      .purchase-btn {
+        padding: 10px 40px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 15px;
+        border-radius: 5px;
+        position: relative;
+        top: 80px;
+        transition: 0.2s linear;
+        &:hover {
+          box-shadow: 0px 0px 5px 0px black;
+        }
+      }
+      .purchase-content {
+        color: white;
+        font-weight: normal;
+        padding-top: 50px;
+        .num-section {
+          font-size: 50px;
+          position: relative;
+          bottom: 30px;
+          left: 9px;
+        }
+        .nine {
+          font-size: 80px;
+          position: relative;
+        }
+        .num {
+          font-size: 50px;
+          position: relative;
+          right: 5px;
+          bottom: 5px;
+        }
+      }
+    }
+    .startup-box-heading {
+      background: linear-gradient(
+          to right,
+          rgba(79, 74, 217, 0.5),
+          rgba(43, 230, 118, 0.5)
+        ),
+        url(images/panorama-3094696_1920.jpg) left top no-repeat;
+      background-position: center;
+      height: 600px;
+      width: 400px;
+    }
+
+    .Execution-box-heading {
+      background: linear-gradient(
+          to right,
+          rgba(236, 51, 18, 0.644),
+          rgb(219, 59, 30)
+        ),
+        url(images/panorama-3094696_1920.jpg) left top no-repeat;
+      background-position: center;
+      height: 600px;
+      width: 400px;
+    }
+  }
+}
+.member-section {
+  // height: 950px;
+  width: 100%;
+  .member-heading-section {
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+
+    .member-content-section {
+      font-size: 22px;
+      color: rgb(214, 194, 194);
+      padding-top: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .member-parents {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    margin: 40px 0px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    .member-img {
+      height: 230px;
+      width: 230px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 0px;
+      }
+    }
+    .member-heading {
+      font-size: 25px;
+      font-weight: 500;
+      text-align: start;
+    }
+    .member-lead {
+      font-size: 18px;
+      color: rgb(151, 159, 151);
+      font-weight: 500;
+    }
+    .member-content {
+      font-size: 16px;
+      font-weight: 200;
+      color: grey;
+      padding-top: 14px;
+    }
+    a {
+      text-decoration: none;
+      position: relative;
+      top: 30px;
+    }
+  }
+  .animation-right {
+    animation: animation-right 1s ease 0s 1 normal forwards;
+  }
+}
+.form-section {
+  background: linear-gradient(
+      to right,
+      rgba(31, 31, 33, 0.5),
+      rgba(14, 18, 15, 0.5)
+    ),
+    url(images/panorama-3094696_1920.jpg) left top no-repeat;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .form-heading-section {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .form-content-section {
+    font-size: 22px;
+    color: white;
+    padding-top: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .fill-form {
+    margin-top: 60px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 60px;
+    animation: fill-form 1s ease 0s 1 normal forwards;
+    input {
+      border: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      padding: 5px;
+      outline: none;
+    }
+    .subject-input {
+      margin-top: 50px;
+    }
+    #message {
+      border: none;
+      border-bottom: 1px solid black;
+      margin-top: 50px;
+      outline: none;
+    }
+  }
+  .send-btn {
+    padding: 10px 40px;
+    margin-top: 50px;
+    background-color: rgb(88, 88, 214);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &:hover {
+      box-shadow: 0px 0px 5px 0px black;
+      transition: 0.2s linear;
+    }
+  }
+  .contact-section {
+    .contact-section-child {
+      text-align: center;
+      margin-bottom: 20px;
+      .contact-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.footer-section {
+  background-color: rgb(103, 103, 208);
+  .footer-icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    filter: brightness(0) invert(1);
+  }
+  .footer-content-section {
+    background-color: rgba(43, 3, 81, 0.847);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    span {
+      color: grey;
+      font-size: 16px;
+    }
+  }
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes work-box-section {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animation-education-right {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 50%;
+  }
+}
+@keyframes pricing-box-section {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes animation-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fill-form {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section-parents {
+    .header-section-area {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .header-section {
+        .logo h5 {
+          font-size: 15px;
+        }
+        ul li {
+          font-size: 11px;
+        }
+      }
+    }
+    .hero-section {
+      .hero-section-heading {
+        font-size: 22px;
+        position: relative;
+      }
+      .hero-section-content {
+        font-size: 12px;
+      }
+      .demo-btn {
+        font-size: 12px;
+      }
+      .learn-btn {
+        font-size: 12px;
+      }
+    }
+  }
+  .Frameworks-section {
+    width: 100%;
+    .equal-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .grid-heading-section {
+        font-size: 22px;
+        .Frameworks-content-section {
+          font-size: 12px;
+        }
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+  .work-section {
+    .work-heading-section {
+      font-size: 22px;
+      .work-content-section {
+        font-size: 12px;
+      }
+    }
+    .work-box-section {
+      .work-box-heading {
+        font-size: 22px;
+        .work-box-content {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .education-section {
+    .education-heading-section {
+      font-size: 22px;
+      .education-content-section {
+        font-size: 15px;
+      }
+    }
+    .education-left-section {
+      .education-img {
+        width: 100%;
+        margin-left: 0px;
+      }
+      .education-box {
+        .education-section {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .education-heading {
+          font-size: 16px;
+        }
+        .education-content {
+          font-size: 12px;
+        }
+      }
+    }
+    .education-right-section {
+      .marketing-img {
+        width: 100%;
+        margin-left: 0px;
+      }
+      .education-box {
+        .education-section {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .education-heading {
+          font-size: 16px;
+        }
+        .education-content {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .pricing-section{
+    .pricing-heading-section{
+      font-size: 22px;
+      .pricing-content-section{
+        font-size: 12px;
+      }
+    }
+  .pricing-box-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  }
+  .member-section{
+    .member-heading-section{
+      font-size: 22px;
+      .member-content-section{
+        font-size: 12px;
+      }
+    } 
+  }
+  .form-section{
+    .form-heading-section{
+      font-size:22px ;
+    }
+      .footer-content-section{
+        font-size: 12px;
+    }
+  }
+}
