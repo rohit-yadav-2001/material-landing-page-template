@@ -517,7 +517,7 @@ img {
   text-align: center;
   padding-top: 60px;
 }
-.form-section .form-content-section {
+.form-section .form-heading-section .form-content-section {
   font-size: 22px;
   color: white;
   padding-top: 20px;
@@ -668,8 +668,8 @@ img {
     justify-content: center;
     background-color: #333333;
     gap: 2em;
-    top: 60px;
-    width: 100%;
+    top: 50px;
+    width: 50%;
     height: calc(100vh - 60px);
     transition: 0.5s;
   }
@@ -769,11 +769,41 @@ img {
   .member-section .member-heading-section .member-content-section {
     font-size: 12px;
   }
+  .form-section {
+    padding-bottom: 10px;
+  }
   .form-section .form-heading-section {
     font-size: 22px;
   }
-  .form-section .form-content-section {
-    font-size: 12px;
+  .form-section .form-heading-section .form-content-section {
+    font-size: 16px;
+  }
+  .form-section .fill-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .form-section .fill-form .fill-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .form-section .fill-form .fill-form-section input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .form-section .fill-form #message {
+    margin-top: 12px;
+    padding: 0px;
+  }
+  .form-section .fill-form .contact-section {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -812,13 +842,7 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .form-section .fill-form input {
-    margin: 20px;
-  }
-  .form-section #message {
-    margin-left: 22px;
-  }
-  .form-section .send-btn {
-    margin-left: 22px;
+  .footer-section .footer-content-section {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
