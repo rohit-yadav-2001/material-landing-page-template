@@ -364,7 +364,7 @@ img {
   background-position: center;
   border: 1px solid transparent;
   height: 600px;
-  width: 400px;
+  width: 100%;
   padding-top: 30px;
   font-size: 25px;
   color: white;
@@ -435,13 +435,13 @@ img {
   background: linear-gradient(to right, rgba(79, 74, 217, 0.5), rgba(43, 230, 118, 0.5)), url(images/panorama-3094696_1920.jpg) left top no-repeat;
   background-position: center;
   height: 600px;
-  width: 400px;
+  width: 100%;
 }
 .pricing-section .pricing-box-section .Execution-box-heading {
   background: linear-gradient(to right, rgba(236, 51, 18, 0.644), rgb(219, 59, 30)), url(images/panorama-3094696_1920.jpg) left top no-repeat;
   background-position: center;
   height: 600px;
-  width: 400px;
+  width: 100%;
 }
 
 .member-section {
@@ -508,7 +508,6 @@ img {
 .form-section {
   background: linear-gradient(to right, rgba(31, 31, 33, 0.5), rgba(14, 18, 15, 0.5)), url(images/panorama-3094696_1920.jpg) left top no-repeat;
   width: 100%;
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 .form-section .form-heading-section {
@@ -656,6 +655,27 @@ img {
   }
 }
 @media screen and (max-width: 992px) {
+  .hero-section-parents label {
+    display: block;
+  }
+  .hero-section-parents ul {
+    z-index: 1;
+    font-size: 1.2em;
+    position: absolute;
+    left: -100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    gap: 2em;
+    top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    transition: 0.5s;
+  }
+  .hero-section-parents input[type=checkbox]:checked ~ ul {
+    left: 0;
+  }
   .hero-section-parents .hero-section .hero-section-heading {
     font-size: 30px;
     position: relative;
@@ -754,5 +774,51 @@ img {
   }
   .form-section .form-content-section {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-section-parents .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .Frameworks-section .equal-section {
+    grid-template-columns: 1fr;
+  }
+  .work-section .work-box-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .member-section .member-parents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .member-section .member-parents .member-heading {
+    text-align: center;
+  }
+  .member-section .member-parents .member-lead {
+    text-align: center;
+  }
+  .member-section .member-parents .member-content {
+    text-align: center;
+  }
+  .member-section .member-parents a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-section .fill-form input {
+    margin: 20px;
+  }
+  .form-section #message {
+    margin-left: 22px;
+  }
+  .form-section .send-btn {
+    margin-left: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
