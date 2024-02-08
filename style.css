@@ -96,47 +96,18 @@
   transition: 0.2s linear;
   box-shadow: 0px 0px 5px 0px black;
 }
-.hero-section-parents .active {
-  border-bottom: 2px solid #ffffff;
-}
-@media screen and (max-width: 992px) {
-  .hero-section-parents label {
-    display: block;
-  }
-  .hero-section-parents ul {
-    z-index: 1;
-    font-size: 1.2em;
-    position: absolute;
-    left: -100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333333;
-    gap: 2em;
-    top: 60px;
-    width: 100%;
-    height: calc(100vh - 60px);
-    transition: 0.5s;
-  }
-  .hero-section-parents input[type=checkbox]:checked ~ ul {
-    left: 0;
-  }
-  .hero-section-parents ul a:hover {
-    background-color: #2c8eec;
-  }
-}
 .hero-section-parents .hero-section {
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
 .hero-section-parents .hero-section .hero-section-heading {
-  font-size: 40px;
+  font-size: 34px;
   color: white;
   text-align: center;
   font-weight: 700;
   text-align: start;
 }
 .hero-section-parents .hero-section .hero-section-content {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-align: start;
 }
@@ -146,7 +117,7 @@
   gap: 10px;
 }
 .hero-section-parents .hero-section .hero-section-buttons .demo-btn {
-  padding: 10px;
+  padding: 10px 30px;
   background-color: white;
   color: black;
   border: 2px solid white;
@@ -218,14 +189,14 @@ img {
   background-color: rgb(232, 231, 231);
 }
 .work-section .work-heading-section {
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   font-weight: 600;
   text-align: center;
   padding-top: 60px;
 }
 .work-section .work-heading-section .work-content-section {
-  font-size: 18px;
+  font-size: 16px;
   color: gray;
   padding-top: 20px;
   font-weight: 100;
@@ -237,13 +208,13 @@ img {
 }
 .work-section .work-box-section .work-box-heading {
   animation: work-box-section 2s ease 0s 1 normal forwards;
-  font-size: 30px;
+  font-size: 28px;
   color: black;
   font-weight: 600;
   text-align: center;
 }
 .work-section .work-box-section .work-box-heading .work-box-content {
-  font-size: 18px;
+  font-size: 16px;
   color: gray;
   padding-top: 20px;
   font-weight: 100;
@@ -253,14 +224,14 @@ img {
   width: 100%;
 }
 .education-section .education-heading-section {
-  font-size: 35px;
+  font-size: 34px;
   color: black;
   font-weight: 600;
   text-align: center;
   padding-top: 60px;
 }
 .education-section .education-heading-section .education-content-section {
-  font-size: 22px;
+  font-size: 16px;
   color: gray;
   padding-top: 20px;
   font-weight: 100;
@@ -275,7 +246,6 @@ img {
   height: 300px;
   width: 400px;
   padding-top: 30px;
-  margin-left: 30px;
 }
 .education-section .education-img img {
   height: 100%;
@@ -287,7 +257,7 @@ img {
 .education-section .education-box {
   display: flex;
   justify-content: start;
-  gap: 20px;
+  gap: 15px;
   padding-top: 15px;
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
@@ -300,28 +270,21 @@ img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-left: 20px;
 }
 .education-section .education-box .education-heading {
   font-size: 22px;
-  margin-left: 30px;
   font-weight: 500;
 }
 .education-section .education-box .education-content {
   font-size: 14px;
   text-align: start;
-  margin-left: 30px;
   color: gray;
-}
-.education-section hr {
-  margin-top: 60px;
 }
 .education-section .marketing-img {
   height: 300px;
   width: 400px;
   padding-top: 30px;
-  margin-left: 30px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .education-section .marketing-img img {
   height: 100%;
@@ -344,7 +307,7 @@ img {
   padding-top: 60px;
 }
 .pricing-section .pricing-heading-section .pricing-content-section {
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(196, 190, 190);
   padding-top: 20px;
   font-weight: 300;
@@ -455,7 +418,7 @@ img {
   padding-top: 60px;
 }
 .member-section .member-heading-section .member-content-section {
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(214, 194, 194);
   padding-top: 20px;
   font-weight: 300;
@@ -518,7 +481,7 @@ img {
   padding-top: 60px;
 }
 .form-section .form-heading-section .form-content-section {
-  font-size: 22px;
+  font-size: 16px;
   color: white;
   padding-top: 20px;
   font-weight: 300;
@@ -657,6 +620,7 @@ img {
 @media screen and (max-width: 992px) {
   .hero-section-parents label {
     display: block;
+    filter: brightness(0) invert(1);
   }
   .hero-section-parents ul {
     z-index: 1;
@@ -801,9 +765,19 @@ img {
   .form-section .fill-form #message {
     margin-top: 12px;
     padding: 0px;
+    width: 100%;
   }
   .form-section .fill-form .contact-section {
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+  .form-section .fill-form .contact-section .contact-section-child {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-section .fill-form .contact-section .contact-section-child .contact-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -841,6 +815,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .send-btn {
+    margin: auto;
+    margin-top: 15px;
   }
   .footer-section .footer-content-section {
     font-size: 12px;
